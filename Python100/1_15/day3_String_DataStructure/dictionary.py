@@ -13,11 +13,13 @@ print(scores['沙发椅'])
 #　对字典进行遍历(遍历的其实是键再通过键取的值)
 for elem in scores:
     print('%s\t --> \t%d' % (elem, scores[elem]))
+
 # 更新字典中的元素
 scores['少数人'] = 65
 scores['诸葛王良'] = 71
 scores.update(冷面=67, 方 = 85)
 print(scores)
+
 if '武则天' in scores:
     print(scores['武则天'])
 print(scores.get('武则天'))

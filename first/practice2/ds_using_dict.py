@@ -22,6 +22,10 @@ print('\n There are {} contacts in thee address-book\n'.format(len(ab)))
 # item方法访问键值与值的信息
 for name, address in ab.items():
     print('{}Contact {}'.format(name, address))
+# 字典遍历
+for key in ab:
+    print(f'{key}  {ab[key]}')
+
 
 # 添加一对键值-值配对
 ab['Guido'] = 'guido@python.org'
